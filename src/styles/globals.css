@@ -1,0 +1,86 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "tailwindcss/theme"; /* optional if you want theme layers */
+
+/* =========================
+   🎨 Global Color Variables
+   ========================= */
+:root {
+  --background: #fff8f7; /* soft blush pink */
+  --foreground: #3e2f2f; /* deep brown */
+  --primary: #e6b8a2; /* warm peachy nude */
+  --secondary: #a97155; /* muted rose gold */
+  --accent: #f9d8d6; /* pale pink */
+  --border-color: #e2c9c3; /* beige border */
+  --border-input: #dab7ad; /* nude input border */
+}
+
+.dark {
+  --background: #18141a; /* dark */
+  --foreground: #f5f0f0;
+  --primary: #d4a68c;
+  --secondary: #b5835a;
+  --accent: #a55d54;
+  --border-color: #4d3d3d;
+  --border-input: #6b4d4d;
+}
+
+/* =========================
+   🌸 Base Styling
+   ========================= */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--secondary);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: var(--foreground);
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+button:hover {
+  background-color: var(--secondary);
+  transform: translateY(-1px);
+}
+
+input,
+textarea,
+select {
+  border: 1px solid var(--border-input);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  color: var(--foreground);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 20%, transparent);
+}
