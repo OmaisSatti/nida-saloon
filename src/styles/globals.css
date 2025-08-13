@@ -2,32 +2,32 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss/theme"; /* optional if you want theme layers */
 
-/* =========================
-   🎨 Global Color Variables
-   ========================= */
 :root {
-  --background: #fff8f7; /* soft blush pink */
-  --foreground: #3e2f2f; /* deep brown */
-  --primary: #e6b8a2; /* warm peachy nude */
-  --secondary: #a97155; /* muted rose gold */
-  --accent: #f9d8d6; /* pale pink */
-  --border-color: #e2c9c3; /* beige border */
-  --border-input: #dab7ad; /* nude input border */
+  --background: #fff5f2; /* warmer, brighter blush beige */
+  --foreground: #2c1f1f; /* richer dark brown for better text contrast */
+  --primary: #e79a7d; /* elegant warm coral */
+  --secondary: #c97a5c; /* deep terracotta */
+  --accent: #ffd6cc; /* soft pastel peach */
+  --border-color: #e7c9c0; 
+  --border-input: #d8a99c;
+  --card-bg: rgba(255, 255, 255, 0.75); /* glass effect for cards */
+  --card-border: rgba(255, 255, 255, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 .dark {
-  --background: #18141a; /* dark */
-  --foreground: #f5f0f0;
-  --primary: #d4a68c;
-  --secondary: #b5835a;
+  --background: #1c1517; /* deep espresso */
+  --foreground: #fdf5f4; /* soft ivory white */
+  --primary: #f1b094; /* warm peach highlight */
+  --secondary: #d98c6b; /* muted copper */
   --accent: #a55d54;
-  --border-color: #4d3d3d;
+  --border-color: #4a3b3b;
   --border-input: #6b4d4d;
+  --card-bg: rgba(28, 21, 23, 0.6); /* glass effect for dark mode */
+  --card-border: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.4);
 }
 
-/* =========================
-   🌸 Base Styling
-   ========================= */
 html,
 body {
   height: 100%;

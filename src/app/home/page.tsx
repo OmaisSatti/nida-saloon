@@ -1,9 +1,9 @@
-
 import ProductCard from "@/components/ProductCard";
 
 interface Product {
   name: string;
-  price: string;
+  price: number;
+  originalPrice?: number;
   image: string;
 }
 
@@ -12,23 +12,51 @@ export default function Home() {
   const products: Product[] = [
     {
       name: "Luxury Hair Oil",
-      price: "$25",
+      price: 2200,
+      originalPrice: 2800,
       image: "/images/1.avif",
     },
     {
       name: "Organic Face Cream",
-      price: "$40",
+      price: 2300,
+      originalPrice: 3000,
       image: "/images/2.avif",
     },
     {
       name: "Rose Gold Lipstick",
-      price: "$15",
+      price: 2400,
+      originalPrice: 2600,
       image: "/images/3.avif",
     },
     {
       name: "Spa Gift Set",
-      price: "$60",
+      price: 2500,
+      originalPrice: 3200,
       image: "/images/4.avif",
+    },
+    {
+      name: "Revitalizing Shampoo",
+      price: 1500,
+      originalPrice: 1800,
+      image: "/images/5.avif",
+    },
+    {
+      name: "Nourishing Conditioner",
+      price: 1600,
+      originalPrice: 1900,
+      image: "/images/6.avif",
+    },
+    {
+      name: "Hydrating Serum",
+      price: 2800,
+      originalPrice: 3500,
+      image: "/images/7.avif",
+    },
+    {
+      name: "Matte Lipstick",
+      price: 1200,
+      originalPrice: 1500,
+      image: "/images/8.avif",
     },
   ];
 
@@ -57,13 +85,19 @@ export default function Home() {
 
       {/* Products */}
       <section className="py-12 px-4 md:px-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Our Products</h2>
+        <h2 className="text-3xl font-extrabold text-center mb-2 text-foreground">
+          Our Best-Selling Favourites
+        </h2>
+        <p className="text-lg text-center text-foreground max-w-2xl mx-auto mb-12">
+          Handpicked just for you — discover the products our customers can’t stop talking about.
+        </p>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {products.map((p) => (
-            <ProductCard key={p.name} {...p} />
+            <ProductCard key={p.name} {...p} originalPrice={p.originalPrice ?? p.price} />
           ))}
         </div>
       </section>
     </main>
   );
 }
+
