@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "@/context/ThemeContext";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
@@ -21,11 +22,15 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-2xl font-bold text-foreground"
-          >
-            Nida Salon
+          <Link href="/">
+              <Image
+                src="/images/logos/logo2.png"
+                alt="Zarnab Beauty Logo"
+                width={100} 
+                height={50}
+                className="object-contain"
+                priority
+              />
           </Link>
 
           {/* Desktop Nav */}

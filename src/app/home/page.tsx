@@ -72,7 +72,7 @@ export default function Home() {
       >
         <div className="bg-black/40 p-6 rounded-xl max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Welcome to Nida Beauty Salon
+            Welcome to Zarnab Beauty Salon
           </h1>
           <p className="text-lg md:text-xl text-white mb-6">
             Your beauty, our passion — Experience premium salon care

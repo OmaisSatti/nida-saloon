@@ -35,7 +35,7 @@ export default function Contact() {
             </li>
             <li>
               📧 <span className="font-semibold">Email:</span>{" "}
-              contact@nidasalon.com
+              contact@zarnabsalon.com
             </li>
           </ul>
         </div>

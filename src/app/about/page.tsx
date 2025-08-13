@@ -34,7 +34,7 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold mb-4">Our Story</h2>
             <p className="mb-4">
-              At <span className="font-semibold">Nida Beauty Salon</span>, we
+              At <span className="font-semibold">Zarnab Beauty Salon</span>, we
               believe beauty is more than skin deep — it’s about confidence,
               self-care, and feeling your absolute best. Since our opening, we
               have dedicated ourselves to creating a relaxing environment where
