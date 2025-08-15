@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border mt-12">
+    <footer className="bg-background mt-12 shadow-[0_-4px_6px_rgba(0,0,0,0.1)]">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8 py-12 grid gap-8 sm:grid-cols-3">
 
         {/* Brand / About */}
